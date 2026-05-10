@@ -1,0 +1,170 @@
+[
+  {
+    "model": "accounts.facility",
+    "pk": "550e8400-e29b-41d4-a716-446655440000",
+    "fields": {
+      "name": "Muhimbili National Hospital",
+      "facility_type": "national_referral",
+      "registration_number": "NAT-001-DSM",
+      "region": "Dar es Salaam",
+      "district": "Ilala",
+      "ward": "Upanga",
+      "street": "United Nations Road",
+      "phone": "+255222151122",
+      "email": "info@mnh.or.tz",
+      "nhif_facility_code": "MNH001",
+      "tra_tin": "100-123-456",
+      "vfd_serial_number": "TRA-VFD-MNH-001",
+      "dhis2_org_unit_id": "UID12345678",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.department",
+    "pk": "550e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "name": "Emergency Medicine",
+      "code": "EMED",
+      "description": "Emergency and trauma department",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.department",
+    "pk": "550e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "name": "Internal Medicine",
+      "code": "IMED",
+      "description": "General internal medicine",
+      "is_active": true
+    }
+  },
+  {
+    "model": "accounts.department",
+    "pk": "550e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "name": "Obstetrics & Gynecology",
+      "code": "OBGYN",
+      "description": "Maternal and women's health",
+      "is_active": true
+    }
+  },
+  {
+    "model": "patients.patient",
+    "pk": "550e8400-e29b-41d4-a716-446655440010",
+    "fields": {
+      "nida_nin": "12345678901234567890",
+      "first_name": "Juma",
+      "middle_name": "Abdallah",
+      "last_name": "Musa",
+      "date_of_birth": "1985-03-15",
+      "gender": "male",
+      "marital_status": "married",
+      "phone_number": "+255712345678",
+      "email": "juma.musa@email.co.tz",
+      "region": "Dar es Salaam",
+      "district": "Ilala",
+      "ward": "Kariakoo",
+      "village_street": "Kariakoo Market",
+      "nhif_card_number": "NHIF123456789",
+      "insurance_scheme": "NHIF Tanzania",
+      "insurance_expiry": "2026-12-31",
+      "occupation": "Teacher",
+      "education_level": "Secondary",
+      "consent_status": true,
+      "consent_date": "2026-01-15T10:30:00Z",
+      "consent_method": "digital",
+      "facility": "550e8400-e29b-41d4-a716-446655440000",
+      "patient_number": "MNH-2026-0001",
+      "is_active": true
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "pk": "550e8400-e29b-41d4-a716-446655440020",
+    "fields": {
+      "msd_code": "MSD-AMOX-500",
+      "name": "Amoxicillin 500mg Capsules",
+      "generic_name": "Amoxicillin",
+      "brand_name": "Amoxil",
+      "category": "medicine",
+      "ven_classification": "essential",
+      "msd_unit_price": "150.00",
+      "selling_price": "200.00",
+      "reorder_level": 100,
+      "reorder_quantity": 500,
+      "requires_prescription": true,
+      "storage_conditions": "Room temperature",
+      "is_active": true
+    }
+  },
+  {
+    "model": "inventory.inventoryitem",
+    "pk": "550e8400-e29b-41d4-a716-446655440021",
+    "fields": {
+      "msd_code": "MSD-PARA-500",
+      "name": "Paracetamol 500mg Tablets",
+      "generic_name": "Paracetamol",
+      "brand_name": "Panadol",
+      "category": "medicine",
+      "ven_classification": "vital",
+      "msd_unit_price": "50.00",
+      "selling_price": "75.00",
+      "reorder_level": 200,
+      "reorder_quantity": 1000,
+      "requires_prescription": false,
+      "storage_conditions": "Room temperature",
+      "is_active": true
+    }
+  },
+  {
+    "model": "consultations.icd10code",
+    "pk": "550e8400-e29b-41d4-a716-446655440030",
+    "fields": {
+      "code": "A00.0",
+      "description": "Cholera due to Vibrio cholerae 01, biovar cholerae",
+      "category": "A00",
+      "subcategory": "Intestinal infectious diseases",
+      "is_sdh": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "consultations.icd10code",
+    "pk": "550e8400-e29b-41d4-a716-446655440031",
+    "fields": {
+      "code": "Z55.0",
+      "description": "Illiteracy and low-level literacy",
+      "category": "Z55",
+      "subcategory": "Problems related to education and literacy",
+      "is_sdh": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "wards.ward",
+    "pk": "550e8400-e29b-41d4-a716-446655440040",
+    "fields": {
+      "name": "Male General Ward",
+      "code": "MGEN",
+      "ward_type": "general_male",
+      "facility": "550e8400-e29b-41d4-a716-446655440000",
+      "floor": "2nd Floor",
+      "capacity": 40,
+      "is_active": true
+    }
+  },
+  {
+    "model": "wards.ward",
+    "pk": "550e8400-e29b-41d4-a716-446655440041",
+    "fields": {
+      "name": "Maternity Ward",
+      "code": "MAT",
+      "ward_type": "maternity",
+      "facility": "550e8400-e29b-41d4-a716-446655440000",
+      "floor": "3rd Floor",
+      "capacity": 30,
+      "is_active": true
+    }
+  }
+]

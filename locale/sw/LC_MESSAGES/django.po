@@ -1,0 +1,325 @@
+# Swahili translations for HospFlow
+# Copyright (C) 2026 HospFlow
+msgid ""
+msgstr ""
+"Project-Id-Version: HospFlow 1.0\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "user"
+msgstr "mtumiaji"
+
+msgid "users"
+msgstr "watumiaji"
+
+msgid "email address"
+msgstr "barua pepe"
+
+msgid "first name"
+msgstr "jina la kwanza"
+
+msgid "last name"
+msgstr "jina la familia"
+
+msgid "phone number"
+msgstr "namba ya simu"
+
+msgid "role"
+msgstr "jukumu"
+
+msgid "Administrator"
+msgstr "Msimamizi"
+
+msgid "Doctor"
+msgstr "Daktari"
+
+msgid "Nurse"
+msgstr "Muuguzi"
+
+msgid "Pharmacist"
+msgstr "Mfamasia"
+
+msgid "Receptionist"
+msgstr "Mpokeaji"
+
+msgid "Laboratory Technician"
+msgstr "Mtaalamu wa Maabara"
+
+msgid "Accountant"
+msgstr "Mhasibu"
+
+msgid "Ward Clerk"
+msgstr "Karani wa Wodi"
+
+msgid "patient"
+msgstr "mgonjwa"
+
+msgid "patients"
+msgstr "wagonjwa"
+
+msgid "NIDA NIN"
+msgstr "Namba ya NIDA"
+
+msgid "20-digit National Identification Number"
+msgstr "Namba ya Kitambulisho cha Taifa yenye tarakimu 20"
+
+msgid "Consent"
+msgstr "Idhini"
+
+msgid "Consent Granted"
+msgstr "Idhini Imekubaliwa"
+
+msgid "Consent Withdrawn"
+msgstr "Idhini Imefutwa"
+
+msgid "Appointment Reminder"
+msgstr "Kikumbusho cha Tembeleo"
+
+msgid "Lab Result Ready"
+msgstr "Matokeo ya Maabara Yamekamilika"
+
+msgid "One-Time Password"
+msgstr "Namba ya Siri ya Muda"
+
+msgid "E-Receipt"
+msgstr "Risiti ya Kidigitali"
+
+msgid "General Alert"
+msgstr "Tahadhari ya Jumla"
+
+msgid "Health Campaign"
+msgstr "Kampeni ya Afya"
+
+msgid "Inventory"
+msgstr "Hesabu ya Vitu"
+
+msgid "Dispense"
+msgstr "Gawa"
+
+msgid "Ward"
+msgstr "Wodi"
+
+msgid "Bed"
+msgstr "Kitanda"
+
+msgid "Admission"
+msgstr "Kulazwa"
+
+msgid "Discharge"
+msgstr "Kutoka Hospitali"
+
+msgid "Billing"
+msgstr "Malipo"
+
+msgid "Invoice"
+msgstr "Ankara"
+
+msgid "NHIF Claim"
+msgstr "Dai la NHIF"
+
+msgid "VFD Receipt"
+msgstr "Risiti ya VFD"
+
+msgid "Audit Log"
+msgstr "Kumbukumbu ya Ukaguzi"
+
+msgid "Create"
+msgstr "Tengeneza"
+
+msgid "Read"
+msgstr "Soma"
+
+msgid "Update"
+msgstr "Sasisha"
+
+msgid "Delete"
+msgstr "Futa"
+
+msgid "Export"
+msgstr "Hamisha"
+
+msgid "Login"
+msgstr "Ingia"
+
+msgid "Logout"
+msgstr "Toka"
+
+msgid "Failed Login"
+msgstr "Kuingia Kushindwa"
+
+msgid "Prescription Dispensed"
+msgstr "Dawa Imegawiwa"
+
+msgid "Claim Submitted"
+msgstr "Dai Limewasilishwa"
+
+msgid "VFD Receipt Generated"
+msgstr "Risiti ya VFD Imetengenezwa"
+
+msgid "Male"
+msgstr "Mwanaume"
+
+msgid "Female"
+msgstr "Mwanamke"
+
+msgid "Other"
+msgstr "Nyingine"
+
+msgid "Unknown"
+msgstr "Haijulikani"
+
+msgid "Single"
+msgstr "Hajaoa"
+
+msgid "Married"
+msgstr "Ameoa/Ameolewa"
+
+msgid "Divorced"
+msgstr "Ameachika"
+
+msgid "Widowed"
+msgstr "Mjane"
+
+msgid "Separated"
+msgstr "Ametengana"
+
+msgid "Cash"
+msgstr "Fedha Taslimu"
+
+msgid "NHIF"
+msgstr "NHIF"
+
+msgid "Other Insurance"
+msgstr "Bima Nyingine"
+
+msgid "Card Payment"
+msgstr "Malipo kwa Kadi"
+
+msgid "Mobile Money"
+msgstr "Pesa kwa Simu"
+
+msgid "Mixed Payment"
+msgstr "Malipo Mchanganyiko"
+
+msgid "Pending"
+msgstr "Inasubiri"
+
+msgid "Paid"
+msgstr "Imelipwa"
+
+msgid "Partially Paid"
+msgstr "Imelipwa Kiasi"
+
+msgid "Cancelled"
+msgstr "Imeghairiwa"
+
+msgid "Refunded"
+msgstr "Imerejeshwa"
+
+msgid "Scheduled"
+msgstr "Imepangwa"
+
+msgid "Checked In"
+msgstr "Amesajiliwa"
+
+msgid "In Progress"
+msgstr "Inaendelea"
+
+msgid "Completed"
+msgstr "Imekamilika"
+
+msgid "No Show"
+msgstr "Hajafika"
+
+msgid "Routine"
+msgstr "Kawaida"
+
+msgid "Urgent"
+msgstr "Haraka"
+
+msgid "Emergency"
+msgstr "Dharura"
+
+msgid "New Case"
+msgstr "Kesi Mpya"
+
+msgid "Follow Up"
+msgstr "Ufuatiliaji"
+
+msgid "Referral"
+msgstr "Rufaa"
+
+msgid "Medicine"
+msgstr "Dawa"
+
+msgid "Medical Supply"
+msgstr "Vifaa vya Matibabu"
+
+msgid "Laboratory Reagent"
+msgstr "Kemikali za Maabara"
+
+msgid "Radiology Consumable"
+msgstr "Vifaa vya Radiology"
+
+msgid "Surgical Instrument"
+msgstr "Vifaa vya Upasuaji"
+
+msgid "Vital"
+msgstr "Muhimu"
+
+msgid "Essential"
+msgstr "Lazima"
+
+msgid "Non-Essential"
+msgstr "Si Lazima"
+
+msgid "National Referral Hospital"
+msgstr "Hospitali ya Rufaa ya Kitaifa"
+
+msgid "Regional Referral Hospital"
+msgstr "Hospitali ya Rufaa ya Kanda"
+
+msgid "District Hospital"
+msgstr "Hospitali ya Wilaya"
+
+msgid "Health Center"
+msgstr "Kituo cha Afya"
+
+msgid "Dispensary"
+msgstr "Zahanati"
+
+msgid "Clinic"
+msgstr "Kliniki"
+
+msgid "Identity & Access Management"
+msgstr "Utambulisho na Usimamizi wa Mfumo"
+
+msgid "Master Patient Index"
+msgstr "Rejesta Kuu ya Wagonjwa"
+
+msgid "Clinical Workflows"
+msgstr "Mchakato wa Matibabu"
+
+msgid "Clinical Records"
+msgstr "Rekodi za Matibabu"
+
+msgid "Billing & Insurance"
+msgstr "Malipo na Bima"
+
+msgid "Logistics & Pharmacy"
+msgstr "Usafirishaji na Famasia"
+
+msgid "Communication Services"
+msgstr "Huduma za Mawasiliano"
+
+msgid "Ward Management"
+msgstr "Usimamizi wa Wodi"
+
+msgid "Audit & Compliance"
+msgstr "Ukaguzi na Uzingatiaji"
+
+msgid "National Reporting & DHIS2"
+msgstr "Ripoti za Kitaifa na DHIS2"

@@ -1,0 +1,88 @@
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: hospflow_db
+      POSTGRES_USER: hospflow_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secure_password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hospflow_user -d hospflow_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=False
+      - SECRET_KEY=${SECRET_KEY}
+      - DATABASE_URL=postgres://hospflow_user:${DB_PASSWORD}@db:5432/hospflow_db
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/1
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    volumes:
+      - ./media:/app/media
+      - ./logs:/app/logs
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py collectstatic --noinput &&
+             gunicorn --bind 0.0.0.0:8000 --workers 4 hospflow.wsgi:application"
+
+  celery_worker:
+    build: .
+    environment:
+      - DEBUG=False
+      - SECRET_KEY=${SECRET_KEY}
+      - DATABASE_URL=postgres://hospflow_user:${DB_PASSWORD}@db:5432/hospflow_db
+      - CELERY_BROKER_URL=redis://redis:6379/1
+    depends_on:
+      - db
+      - redis
+    command: celery -A hospflow worker -l info --concurrency=4
+
+  celery_beat:
+    build: .
+    environment:
+      - DEBUG=False
+      - SECRET_KEY=${SECRET_KEY}
+      - DATABASE_URL=postgres://hospflow_user:${DB_PASSWORD}@db:5432/hospflow_db
+      - CELERY_BROKER_URL=redis://redis:6379/1
+    depends_on:
+      - db
+      - redis
+    command: celery -A hospflow beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./staticfiles:/var/www/static:ro
+      - ./media:/var/www/media:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - web
+
+volumes:
+  postgres_data:
+  redis_data:
