@@ -4,12 +4,17 @@ Healthcare Management System for Tanzania
 """
 
 import os
+from importlib.util import find_spec
 from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+def package_available(package_name):
+    return find_spec(package_name) is not None
 
 # ensure logs directory exists
 LOGS_DIR = BASE_DIR / "logs"
@@ -21,6 +26,7 @@ ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost").split(",")
 
 # Application Definition
 DJANGO_APPS = [
+    "unfold",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -53,12 +59,14 @@ LOCAL_APPS = [
     "apps.common",
 ]
 
+THIRD_PARTY_APPS = [
+    app for app in THIRD_PARTY_APPS if package_available(app.split(".")[0])
+]
+
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -67,8 +75,16 @@ MIDDLEWARE = [
     "apps.audit.middleware.AuditLogMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
+
+if package_available("whitenoise"):
+    MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
+
+if package_available("corsheaders"):
+    MIDDLEWARE.insert(2, "corsheaders.middleware.CorsMiddleware")
+
+if package_available("debug_toolbar"):
+    MIDDLEWARE.append("debug_toolbar.middleware.DebugToolbarMiddleware")
 
 ROOT_URLCONF = "hospflow.urls"
 TEMPLATES = [
@@ -102,16 +118,23 @@ DATABASES = {
 # Caches - Redis Layer
 CACHES = {
     "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": os.getenv("REDIS_URL", "redis://127.0.0.1:6379/0"),
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "CONNECTION_POOL_KWARGS": {"max_connections": 100},
-        },
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
         "KEY_PREFIX": "hospflow",
         "TIMEOUT": 300,
     }
 }
+
+if package_available("django_redis"):
+    CACHES["default"].update(
+        {
+            "BACKEND": "django_redis.cache.RedisCache",
+            "LOCATION": os.getenv("REDIS_URL", "redis://127.0.0.1:6379/0"),
+            "OPTIONS": {
+                "CLIENT_CLASS": "django_redis.client.DefaultClient",
+                "CONNECTION_POOL_KWARGS": {"max_connections": 100},
+            },
+        }
+    )
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
@@ -130,10 +153,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 PASSWORD_HASHERS = [
-    "django.contrib.auth.hashers.Argon2PasswordHasher",
     "django.contrib.auth.hashers.PBKDF2PasswordHasher",
     "django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher",
 ]
+
+if package_available("argon2"):
+    PASSWORD_HASHERS.insert(0, "django.contrib.auth.hashers.Argon2PasswordHasher")
 
 # Internationalization - Tanzania Context
 LANGUAGE_CODE = os.getenv("LANGUAGE_CODE", "sw")
@@ -152,7 +177,8 @@ LOCALE_PATHS = [BASE_DIR / "locale"]
 # Static & Media Files
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+if package_available("whitenoise"):
+    STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
@@ -238,12 +264,17 @@ CELERY_BEAT_SCHEDULE = {
 # Channels (ASGI/WebSockets)
 CHANNEL_LAYERS = {
     "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
+    },
+}
+
+if package_available("channels_redis"):
+    CHANNEL_LAYERS["default"] = {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
             "hosts": [os.getenv("REDIS_URL", "redis://127.0.0.1:6379/0")],
         },
-    },
-}
+    }
 
 # Logging Configuration
 LOGGING = {

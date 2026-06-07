@@ -2,11 +2,12 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
+from unfold.admin import ModelAdmin
 from .models import User, Department, Facility
 
 
 @admin.register(User)
-class UserAdmin(BaseUserAdmin):
+class UserAdmin(BaseUserAdmin, ModelAdmin):
     list_display = ["email", "get_full_name", "role", "department", "facility", "is_active", "is_verified"]
     list_filter = ["role", "is_active", "is_verified", "department", "facility", "date_joined"]
     search_fields = ["email", "first_name", "last_name", "nida_nin", "professional_reg_no"]
@@ -29,13 +30,13 @@ class UserAdmin(BaseUserAdmin):
 
 
 @admin.register(Department)
-class DepartmentAdmin(admin.ModelAdmin):
+class DepartmentAdmin(ModelAdmin):
     list_display = ["name", "code", "head", "is_active"]
     search_fields = ["name", "code"]
 
 
 @admin.register(Facility)
-class FacilityAdmin(admin.ModelAdmin):
+class FacilityAdmin(ModelAdmin):
     list_display = ["name", "facility_type", "region", "district", "nhif_facility_code", "is_active"]
     list_filter = ["facility_type", "region", "is_active"]
     search_fields = ["name", "registration_number", "nhif_facility_code", "tra_tin"]

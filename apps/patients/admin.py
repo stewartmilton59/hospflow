@@ -2,23 +2,24 @@
 
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
+from unfold.admin import ModelAdmin, TabularInline
 from .models import Patient, ConsentLog, NextOfKin
 
 
-class ConsentLogInline(admin.TabularInline):
+class ConsentLogInline(TabularInline):
     model = ConsentLog
     extra = 0
     readonly_fields = ["action", "method", "performed_by", "timestamp", "ip_address"]
     can_delete = False
 
 
-class NextOfKinInline(admin.TabularInline):
+class NextOfKinInline(TabularInline):
     model = NextOfKin
     extra = 1
 
 
 @admin.register(Patient)
-class PatientAdmin(admin.ModelAdmin):
+class PatientAdmin(ModelAdmin):
     list_display = [
         "patient_number",
         "get_full_name",
@@ -123,7 +124,7 @@ class PatientAdmin(admin.ModelAdmin):
 
 
 @admin.register(ConsentLog)
-class ConsentLogAdmin(admin.ModelAdmin):
+class ConsentLogAdmin(ModelAdmin):
     list_display = ["patient", "action", "method", "performed_by", "timestamp"]
     list_filter = ["action", "method", "timestamp"]
     search_fields = [

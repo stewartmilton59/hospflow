@@ -1,0 +1,353 @@
+INFO 2026-06-08 00:16:32,054 autoreload 17603 140665730238336 Watching for file changes with StatReloader
+WARNING 2026-06-08 00:16:35,230 log 17603 140665674524352 Not Found: /
+WARNING 2026-06-08 00:16:35,231 basehttp 17603 140665674524352 "GET / HTTP/1.1" 404 179
+WARNING 2026-06-08 00:16:35,342 log 17603 140665674524352 Not Found: /favicon.ico
+INFO 2026-06-08 00:16:40,875 basehttp 17603 140665665083072 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-08 00:16:41,086 basehttp 17603 140665665083072 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4187
+WARNING 2026-06-08 00:16:41,204 log 17603 140665665083072 Not Found: /static/admin/css/base.css
+WARNING 2026-06-08 00:16:41,204 basehttp 17603 140665665083072 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:16:41,208 log 17603 140665655641792 Not Found: /static/admin/css/dark_mode.css
+WARNING 2026-06-08 00:16:41,210 log 17603 140665665083072 Not Found: /static/admin/css/login.css
+WARNING 2026-06-08 00:16:41,211 log 17603 140665647249088 Not Found: /static/admin/js/theme.js
+WARNING 2026-06-08 00:16:41,214 log 17603 140665638856384 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2026-06-08 00:16:41,217 log 17603 140665630463680 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2026-06-08 00:16:41,222 log 17603 140665279215296 Not Found: /static/admin/css/responsive.css
+WARNING 2026-06-08 00:16:41,223 basehttp 17603 140665655641792 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:16:41,224 basehttp 17603 140665665083072 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:16:41,225 basehttp 17603 140665630463680 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:16:41,225 basehttp 17603 140665638856384 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:16:41,225 basehttp 17603 140665647249088 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:16:41,227 basehttp 17603 140665279215296 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2026-06-08 00:17:03,906 autoreload 18069 139701481604992 Watching for file changes with StatReloader
+WARNING 2026-06-08 00:17:07,827 log 18069 139701426054848 Not Found: /
+WARNING 2026-06-08 00:17:07,828 basehttp 18069 139701426054848 "GET / HTTP/1.1" 404 179
+INFO 2026-06-08 00:17:09,265 basehttp 18069 139701426054848 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4187
+WARNING 2026-06-08 00:17:09,333 log 18069 139701426054848 Not Found: /static/admin/css/base.css
+WARNING 2026-06-08 00:17:09,335 log 18069 139701407172288 Not Found: /static/admin/js/theme.js
+WARNING 2026-06-08 00:17:09,336 log 18069 139701415564992 Not Found: /static/admin/css/dark_mode.css
+WARNING 2026-06-08 00:17:09,337 basehttp 18069 139701426054848 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:09,338 basehttp 18069 139701415564992 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:09,338 basehttp 18069 139701407172288 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:09,340 log 18069 139701193275072 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2026-06-08 00:17:09,341 basehttp 18069 139701193275072 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:09,342 log 18069 139701426054848 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2026-06-08 00:17:09,343 basehttp 18069 139701426054848 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:09,348 log 18069 139701415564992 Not Found: /static/admin/css/login.css
+WARNING 2026-06-08 00:17:09,350 basehttp 18069 139701415564992 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:09,349 log 18069 139701407172288 Not Found: /static/admin/css/responsive.css
+WARNING 2026-06-08 00:17:09,351 basehttp 18069 139701407172288 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2026-06-08 00:17:10,600 basehttp 18069 139701426054848 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4187
+WARNING 2026-06-08 00:17:10,651 log 18069 139701426054848 Not Found: /static/admin/css/base.css
+WARNING 2026-06-08 00:17:10,651 basehttp 18069 139701426054848 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:10,653 log 18069 139701426054848 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2026-06-08 00:17:10,657 log 18069 139701415564992 Not Found: /static/admin/js/theme.js
+WARNING 2026-06-08 00:17:10,656 log 18069 139701193275072 Not Found: /static/admin/css/dark_mode.css
+WARNING 2026-06-08 00:17:10,658 log 18069 139701407172288 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2026-06-08 00:17:10,661 log 18069 139701184882368 Not Found: /static/admin/css/login.css
+WARNING 2026-06-08 00:17:10,662 log 18069 139701176489664 Not Found: /static/admin/css/responsive.css
+WARNING 2026-06-08 00:17:10,663 basehttp 18069 139701426054848 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:10,664 basehttp 18069 139701407172288 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:10,663 basehttp 18069 139701415564992 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:10,664 basehttp 18069 139701193275072 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:10,665 basehttp 18069 139701184882368 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:10,665 basehttp 18069 139701176489664 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+INFO 2026-06-08 00:17:11,402 basehttp 18069 139701426054848 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4187
+WARNING 2026-06-08 00:17:11,458 log 18069 139701426054848 Not Found: /static/admin/css/base.css
+WARNING 2026-06-08 00:17:11,459 log 18069 139701407172288 Not Found: /static/admin/js/theme.js
+WARNING 2026-06-08 00:17:11,461 log 18069 139701415564992 Not Found: /static/admin/css/dark_mode.css
+WARNING 2026-06-08 00:17:11,462 log 18069 139701193275072 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2026-06-08 00:17:11,463 log 18069 139701184882368 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2026-06-08 00:17:11,468 basehttp 18069 139701184882368 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:11,463 basehttp 18069 139701426054848 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:11,466 basehttp 18069 139701407172288 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:11,467 basehttp 18069 139701415564992 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:11,468 basehttp 18069 139701193275072 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:11,465 log 18069 139701176489664 Not Found: /static/admin/css/login.css
+WARNING 2026-06-08 00:17:11,472 log 18069 139701426054848 Not Found: /static/admin/css/responsive.css
+WARNING 2026-06-08 00:17:11,474 basehttp 18069 139701426054848 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:11,474 basehttp 18069 139701176489664 "GET /static/admin/css/login.css HTTP/1.1" 404 179
+INFO 2026-06-08 00:17:16,941 basehttp 18069 139701426054848 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-06-08 00:17:16,982 basehttp 18069 139701426054848 "GET /admin/ HTTP/1.1" 200 20219
+WARNING 2026-06-08 00:17:17,089 log 18069 139701426054848 Not Found: /static/admin/css/base.css
+WARNING 2026-06-08 00:17:17,092 basehttp 18069 139701426054848 "GET /static/admin/css/base.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:17,096 log 18069 139701407172288 Not Found: /static/admin/css/dark_mode.css
+WARNING 2026-06-08 00:17:17,098 log 18069 139701415564992 Not Found: /static/admin/js/theme.js
+WARNING 2026-06-08 00:17:17,098 basehttp 18069 139701407172288 "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:17,099 log 18069 139701193275072 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2026-06-08 00:17:17,102 basehttp 18069 139701415564992 "GET /static/admin/js/theme.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:17,103 basehttp 18069 139701193275072 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:17,105 log 18069 139701184882368 Not Found: /static/admin/js/nav_sidebar.js
+WARNING 2026-06-08 00:17:17,106 basehttp 18069 139701184882368 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:17,107 log 18069 139701176489664 Not Found: /static/admin/css/dashboard.css
+WARNING 2026-06-08 00:17:17,110 log 18069 139701426054848 Not Found: /static/admin/css/responsive.css
+WARNING 2026-06-08 00:17:17,112 basehttp 18069 139701426054848 "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:17,114 basehttp 18069 139701176489664 "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:17:17,169 log 18069 139701426054848 Not Found: /favicon.ico
+WARNING 2026-06-08 00:17:17,170 basehttp 18069 139701426054848 "GET /favicon.ico HTTP/1.1" 404 179
+ERROR 2026-06-08 00:20:42,335 log 2 140384281380736 Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/deprecation.py", line 308, in __call__
+    response = self.process_request(request)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/http/request.py", line 206, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'testserver'. You may need to add 'testserver' to ALLOWED_HOSTS.
+INFO 2026-06-08 00:21:13,284 autoreload 22365 140332932208512 Watching for file changes with StatReloader
+INFO 2026-06-08 00:24:39,462 autoreload 24642 140195647592320 Watching for file changes with StatReloader
+INFO 2026-06-08 00:26:55,598 autoreload 26134 140594698327936 Watching for file changes with StatReloader
+WARNING 2026-06-08 00:27:00,207 log 26134 140594573731520 Not Found: /
+WARNING 2026-06-08 00:27:00,207 log 26134 140594573731520 "GET / HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:00,334 log 26134 140594573731520 Not Found: /favicon.ico
+WARNING 2026-06-08 00:27:00,334 log 26134 140594573731520 "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2026-06-08 00:27:06,334 log 26134 140594573731520 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-06-08 00:27:06,374 log 26134 140594573731520 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 11621
+WARNING 2026-06-08 00:27:06,488 log 26134 140594573731520 Not Found: /static/unfold/fonts/inter/styles.css
+WARNING 2026-06-08 00:27:06,490 log 26134 140594564290240 Not Found: /static/unfold/fonts/material-symbols/styles.css
+WARNING 2026-06-08 00:27:06,491 log 26134 140594573731520 "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,492 log 26134 140594564290240 "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,498 log 26134 140594564290240 Not Found: /static/unfold/css/simplebar/simplebar.css
+WARNING 2026-06-08 00:27:06,499 log 26134 140594573731520 Not Found: /static/unfold/css/styles.css
+WARNING 2026-06-08 00:27:06,502 log 26134 140594573731520 "GET /static/unfold/css/styles.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,501 log 26134 140594555897536 Not Found: /static/unfold/js/alpine/alpine.anchor.js
+WARNING 2026-06-08 00:27:06,504 log 26134 140594564290240 "GET /static/unfold/css/simplebar/simplebar.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,505 log 26134 140594555897536 "GET /static/unfold/js/alpine/alpine.anchor.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,507 log 26134 140594344097472 Not Found: /static/unfold/js/alpine/alpine.persist.js
+WARNING 2026-06-08 00:27:06,511 log 26134 140594344097472 "GET /static/unfold/js/alpine/alpine.persist.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,510 log 26134 140594335704768 Not Found: /static/unfold/js/alpine/alpine.sort.js
+WARNING 2026-06-08 00:27:06,512 log 26134 140594327312064 Not Found: /static/unfold/js/alpine/alpine.resize.js
+WARNING 2026-06-08 00:27:06,514 log 26134 140594555897536 Not Found: /static/unfold/js/alpine/alpine.js
+WARNING 2026-06-08 00:27:06,519 log 26134 140594335704768 "GET /static/unfold/js/alpine/alpine.sort.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,520 log 26134 140594327312064 "GET /static/unfold/js/alpine/alpine.resize.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,523 log 26134 140594335704768 Not Found: /static/unfold/js/chart/chart.js
+WARNING 2026-06-08 00:27:06,520 log 26134 140594555897536 "GET /static/unfold/js/alpine/alpine.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,517 log 26134 140594344097472 Not Found: /static/unfold/js/htmx/htmx.js
+WARNING 2026-06-08 00:27:06,525 log 26134 140594327312064 Not Found: /static/unfold/js/app.js
+WARNING 2026-06-08 00:27:06,526 log 26134 140594335704768 "GET /static/unfold/js/chart/chart.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,528 log 26134 140594344097472 "GET /static/unfold/js/htmx/htmx.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,529 log 26134 140594327312064 "GET /static/unfold/js/app.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,545 log 26134 140594573731520 Not Found: /static/unfold/js/simplebar/simplebar.js
+WARNING 2026-06-08 00:27:06,546 log 26134 140594573731520 "GET /static/unfold/js/simplebar/simplebar.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,579 log 26134 140594564290240 Not Found: /static/unfold/js/chart/chart.js
+WARNING 2026-06-08 00:27:06,580 log 26134 140594564290240 "GET /static/unfold/js/chart/chart.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,639 log 26134 140594573731520 Not Found: /static/unfold/js/app.js
+WARNING 2026-06-08 00:27:06,640 log 26134 140594573731520 "GET /static/unfold/js/app.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:06,656 log 26134 140594573731520 Not Found: /static/unfold/js/simplebar/simplebar.js
+WARNING 2026-06-08 00:27:06,657 log 26134 140594573731520 "GET /static/unfold/js/simplebar/simplebar.js HTTP/1.1" 404 179
+ERROR 2026-06-08 00:27:18,950 log 26134 140594573731520 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/cache.py", line 138, in has_key
+    return self.client.has_key(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/client/default.py", line 740, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 450, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/auth/views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/generic/base.py", line 145, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/auth/views.py", line 108, in form_valid
+    auth_login(self.request, form.get_user())
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/auth/__init__.py", line 187, in login
+    request.session.cycle_key()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/base.py", line 434, in cycle_key
+    self.create()
+    ~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/cache.py", line 55, in create
+    self._session_key = self._get_new_session_key()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/base.py", line 198, in _get_new_session_key
+    if not self.exists(session_key):
+           ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/cache.py", line 117, in exists
+    bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/core/cache/backends/base.py", line 301, in __contains__
+    return self.has_key(key)
+           ~~~~~~~~~~~~^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+    ^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/client/default.py", line 738, in has_key
+    return client.exists(key) == 1
+           ~~~~~~~~~~~~~^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/commands/core.py", line 1736, in exists
+    return self.execute_command("EXISTS", *names, keys=names)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/connection.py", line 1533, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/connection.py", line 380, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/connection.py", line 397, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2026-06-08 00:27:18,964 log 26134 140594573731520 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 145
+INFO 2026-06-08 00:27:23,194 log 26134 140594573731520 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 11621
+WARNING 2026-06-08 00:27:23,254 log 26134 140594573731520 Not Found: /static/unfold/fonts/inter/styles.css
+WARNING 2026-06-08 00:27:23,255 log 26134 140594573731520 "GET /static/unfold/fonts/inter/styles.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,258 log 26134 140594555897536 Not Found: /static/unfold/fonts/material-symbols/styles.css
+WARNING 2026-06-08 00:27:23,258 log 26134 140594555897536 "GET /static/unfold/fonts/material-symbols/styles.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,260 log 26134 140594564290240 Not Found: /static/unfold/js/alpine/alpine.persist.js
+WARNING 2026-06-08 00:27:23,262 log 26134 140594573731520 Not Found: /static/unfold/js/alpine/alpine.sort.js
+WARNING 2026-06-08 00:27:23,269 log 26134 140594555897536 Not Found: /static/unfold/js/alpine/alpine.resize.js
+WARNING 2026-06-08 00:27:23,263 log 26134 140594335704768 Not Found: /static/unfold/css/styles.css
+WARNING 2026-06-08 00:27:23,266 log 26134 140594327312064 Not Found: /static/unfold/js/alpine/alpine.anchor.js
+WARNING 2026-06-08 00:27:23,265 log 26134 140594344097472 Not Found: /static/unfold/css/simplebar/simplebar.css
+WARNING 2026-06-08 00:27:23,272 log 26134 140594573731520 "GET /static/unfold/js/alpine/alpine.sort.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,272 log 26134 140594555897536 "GET /static/unfold/js/alpine/alpine.resize.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,273 log 26134 140594564290240 "GET /static/unfold/js/alpine/alpine.persist.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,273 log 26134 140594327312064 "GET /static/unfold/js/alpine/alpine.anchor.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,273 log 26134 140594335704768 "GET /static/unfold/css/styles.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,275 log 26134 140594344097472 "GET /static/unfold/css/simplebar/simplebar.css HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,280 log 26134 140594327312064 Not Found: /static/unfold/js/htmx/htmx.js
+WARNING 2026-06-08 00:27:23,284 log 26134 140594335704768 Not Found: /static/unfold/js/chart/chart.js
+WARNING 2026-06-08 00:27:23,290 log 26134 140594335704768 "GET /static/unfold/js/chart/chart.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,288 log 26134 140594564290240 Not Found: /static/unfold/js/alpine/alpine.js
+WARNING 2026-06-08 00:27:23,289 log 26134 140594327312064 "GET /static/unfold/js/htmx/htmx.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,287 log 26134 140594344097472 Not Found: /static/unfold/js/app.js
+WARNING 2026-06-08 00:27:23,294 log 26134 140594564290240 "GET /static/unfold/js/alpine/alpine.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,296 log 26134 140594344097472 "GET /static/unfold/js/app.js HTTP/1.1" 404 179
+WARNING 2026-06-08 00:27:23,314 log 26134 140594573731520 Not Found: /static/unfold/js/simplebar/simplebar.js
+WARNING 2026-06-08 00:27:23,315 log 26134 140594573731520 "GET /static/unfold/js/simplebar/simplebar.js HTTP/1.1" 404 179
+ERROR 2026-06-08 00:27:36,171 log 26134 140594573731520 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/cache.py", line 138, in has_key
+    return self.client.has_key(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/client/default.py", line 740, in has_key
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 450, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/auth/views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/generic/base.py", line 145, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/auth/views.py", line 108, in form_valid
+    auth_login(self.request, form.get_user())
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/auth/__init__.py", line 187, in login
+    request.session.cycle_key()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/base.py", line 434, in cycle_key
+    self.create()
+    ~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/cache.py", line 55, in create
+    self._session_key = self._get_new_session_key()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/base.py", line 198, in _get_new_session_key
+    if not self.exists(session_key):
+           ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/contrib/sessions/backends/cache.py", line 117, in exists
+    bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django/core/cache/backends/base.py", line 301, in __contains__
+    return self.has_key(key)
+           ~~~~~~~~~~~~^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__  # noqa: B904
+    ^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/django_redis/client/default.py", line 738, in has_key
+    return client.exists(key) == 1
+           ~~~~~~~~~~~~~^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/commands/core.py", line 1736, in exists
+    return self.execute_command("EXISTS", *names, keys=names)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/connection.py", line 1533, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/connection.py", line 380, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/stewart/Desktop/hospflow/myvenv/lib/python3.13/site-packages/redis/connection.py", line 397, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2026-06-08 00:27:36,174 log 26134 140594573731520 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 145

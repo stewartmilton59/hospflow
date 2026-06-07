@@ -1,9 +1,10 @@
 from django.contrib import admin
+from unfold.admin import ModelAdmin
 from .models import AuditLog, DataExportLog
 
 
 @admin.register(AuditLog)
-class AuditLogAdmin(admin.ModelAdmin):
+class AuditLogAdmin(ModelAdmin):
     list_display = ["created_at", "user", "action", "resource_type", "severity", "ip_address"]
     list_filter = ["action", "severity", "resource_type", "created_at"]
     search_fields = ["user__email", "resource_id", "resource_repr"]
@@ -20,5 +21,5 @@ class AuditLogAdmin(admin.ModelAdmin):
 
 
 @admin.register(DataExportLog)
-class DataExportLogAdmin(admin.ModelAdmin):
+class DataExportLogAdmin(ModelAdmin):
     list_display = ["created_at", "user", "export_type", "record_count", "file_format"]

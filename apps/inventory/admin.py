@@ -1,14 +1,15 @@
 from django.contrib import admin
+from unfold.admin import ModelAdmin, TabularInline
 from .models import InventoryItem, InventoryBatch, DispensingLog, StockAdjustment
 
 
-class InventoryBatchInline(admin.TabularInline):
+class InventoryBatchInline(TabularInline):
     model = InventoryBatch
     extra = 0
 
 
 @admin.register(InventoryItem)
-class InventoryItemAdmin(admin.ModelAdmin):
+class InventoryItemAdmin(ModelAdmin):
     list_display = ["name", "msd_code", "category", "ven_classification", "total_stock", "is_low_stock", "is_active"]
     list_filter = ["category", "ven_classification", "requires_prescription", "is_active"]
     search_fields = ["name", "generic_name", "msd_code"]
@@ -16,7 +17,7 @@ class InventoryItemAdmin(admin.ModelAdmin):
 
 
 @admin.register(InventoryBatch)
-class InventoryBatchAdmin(admin.ModelAdmin):
+class InventoryBatchAdmin(ModelAdmin):
     list_display = ["item", "batch_number", "expiry_date", "quantity_remaining", "facility"]
     list_filter = ["facility", "expiry_date"]
     search_fields = ["item__name", "batch_number"]
@@ -24,12 +25,12 @@ class InventoryBatchAdmin(admin.ModelAdmin):
 
 
 @admin.register(DispensingLog)
-class DispensingLogAdmin(admin.ModelAdmin):
+class DispensingLogAdmin(ModelAdmin):
     list_display = ["patient", "batch", "quantity_dispensed", "dispensed_by", "created_at"]
     list_filter = ["dispensed_by", "created_at"]
 
 
 @admin.register(StockAdjustment)
-class StockAdjustmentAdmin(admin.ModelAdmin):
+class StockAdjustmentAdmin(ModelAdmin):
     list_display = ["batch", "adjustment_type", "quantity_adjusted", "performed_by", "created_at"]
     list_filter = ["adjustment_type", "created_at"]
